@@ -39,7 +39,7 @@ Move::Move(
   config().blackboard->get("node", node);
 
   try {
-    node->declare_parameter<std::vector<std::string>>("waypoints");
+    node->declare_parameter<std::vector<std::string>>("waypoints", std::vector<std::string>{});
   } catch (const rclcpp::exceptions::ParameterAlreadyDeclaredException & e) {
     // Do nothing;
   }

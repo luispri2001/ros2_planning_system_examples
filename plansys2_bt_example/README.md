@@ -45,6 +45,8 @@ set predicate (piece_at wheel_1 wheels_zone)
 set predicate (piece_at body_car_1 body_car_zone)
 set predicate (piece_at steering_wheel_1 steering_wheels_zone)
 
+set predicate (battery_full r2d2)
+set predicate (robot_available r2d2)
 set predicate (robot_at r2d2 assembly_zone)
 
 set goal (and(piece_at wheel_1 assembly_zone))
